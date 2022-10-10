@@ -3,6 +3,10 @@
     <h3>
         {{title}}{{subtitle}}
     </h3>
+    <div>
+        <button @click="helloWorld">Iteration 3</button>
+        <button @click="newFunc"> Change Title</button>
+    </div>
 </template>
 <script>
 export default {
@@ -15,6 +19,9 @@ export default {
     methods: {
         newFunc(){
             this.title = 'Changing title with Options API'
+        },
+        helloWorld(){
+            console.log('Hello World')
         }
     }
 }
